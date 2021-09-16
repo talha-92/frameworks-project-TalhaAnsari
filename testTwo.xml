@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Heat clinic demo" verbose="1" >
+    <test name="Add to cart" >
+        <classes>
+            <class name="com.talha.pages.AddToCartPage" />
+        </classes>
+    </test>
+
+    <test name="adding to cart">
+        <classes>
+            <class name="com.talha.test.AddToCartPageTest"/>
+        </classes>
+    </test>
+</suite>
