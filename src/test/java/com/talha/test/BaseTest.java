@@ -1,7 +1,6 @@
-package com.talha.tests;
+package com.talha.test;
 
-import com.talha.pages.LoginPage;
-import com.talha.pages.RegistrationPage;
+import com.talha.pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,10 +15,10 @@ public class BaseTest {
     //Test Classes
     protected RegistrationPage registrationPage;
     protected LoginPage loginPage;
-    // protected AddToCartPage addToCartPage;
-    // protected CheckoutPage checkoutPage;
-    //protected BillingShippingInforPage billingShippingInforPage;
-    // protected RegistrationPageParamOne registrationPageParamOne;
+    protected AddToCartPage addToCartPage;
+    protected CheckoutPage checkoutPage;
+    protected BillingShippingInforPage billingShippingInforPage;
+    //protected RegistrationPageParamOne registrationPageParamOne;
 
 
     @BeforeClass
@@ -27,9 +26,9 @@ public class BaseTest {
         init();
         registrationPage = new RegistrationPage(driver);
         loginPage = new LoginPage(driver);
-        //addToCartPage = new AddToCartPage(driver);
-        //checkoutPage = new CheckoutPage(driver);
-        //billingShippingInforPage = new BillingShippingInforPage(driver);
+        addToCartPage = new AddToCartPage(driver);
+        checkoutPage = new CheckoutPage(driver);
+        billingShippingInforPage = new BillingShippingInforPage(driver);
         //registrationPageParamOne = new RegistrationPageParamOne(driver);
     }
 

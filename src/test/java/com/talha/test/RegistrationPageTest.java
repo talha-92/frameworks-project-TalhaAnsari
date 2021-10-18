@@ -1,4 +1,4 @@
-package com.talha.tests;
+package com.talha.test;
 
 import org.testng.annotations.Test;
 
